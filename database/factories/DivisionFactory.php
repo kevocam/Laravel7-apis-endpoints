@@ -11,7 +11,6 @@ $factory->define(division::class, function (Faker $faker) {
         "embajador" => $faker->name,
         "nivel" => $faker->numberBetween(1, 5),
         "integrantes"=> $faker->numberBetween(1, 10),
-        "id_sup" => App\division::all()->random()->id
-        
+        "id_sup" => App\division::all()->random()->id        
     ];
 });
