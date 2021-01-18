@@ -20,7 +20,6 @@ class CreateDivisionsTable extends Migration
             $table->integer('nivel');             
             $table->integer('integrantes');             
             $table->integer('id_sup')->nullable();            
-            $table->integer('id_sub')->nullable();             
             $table->timestamps();
             
         });
