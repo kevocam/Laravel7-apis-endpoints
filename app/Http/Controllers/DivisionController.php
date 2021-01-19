@@ -21,12 +21,13 @@ class DivisionController extends Controller
         $divisions = new Division;
         $divisions->nombre = $request->nombre;              
         $divisions->embajador = $request->embajador;
-        $divisions->save();
-  
+        $divisions->save();  
         return response()->json([
           "message" => "Division creada con éxito"
         ], 201);
       }
+
+ 
 
     public function index()
     {

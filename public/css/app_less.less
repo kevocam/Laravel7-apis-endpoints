@@ -1,0 +1,57 @@
+@color-principal: #2e52f8;
+
+@gradiente: linear-gradient(270deg, #56A7F2 27.97%, rgba(255, 255, 255, 0) 83.44%), #2E52F8;
+
+
+
+
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+html{
+    font-size:62.5%;
+    font-family: "DM Sans", sans-serif;
+}
+.header{
+    width:100%;
+    height: 70px;
+    background:@gradiente;
+    color:white;
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.15);
+    &__menu{
+
+        width:50%;
+        height: 100%;
+
+        font-size: 1.4rem;
+        ul{
+            list-style: none;
+            display: flex;
+            height: 100%;
+            justify-content: space-around;
+            align-items: center;
+            margin:0;
+            li{
+                align-self: center;
+            }
+            li:hover{
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+.title{
+    font-weight: lighter;
+    padding:0 5%;    
+}
+.content{
+    width:100%;
+    font-size: 1.6rem;
+    padding:0 5%;
+
+}
